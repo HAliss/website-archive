@@ -33,7 +33,7 @@ Shader "Custom/SphericalMaskDissolve" {
         fixed4 _Emission;
         float _NoiseSize;
  
-        float4 _GLOBALMaskPosition;
+        float3 _GLOBALMaskPosition;
         half _GLOBALMaskRadius;
         half _GLOBALMaskSoftness;
  
