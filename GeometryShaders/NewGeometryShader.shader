@@ -51,11 +51,11 @@ Shader "Geometry/NewGeometryShader"
             }
  
             [maxvertexcount(3)]
-            void geom(triangle v2g IN[3], inout TriangleStream&lt;g2f> triStream)
+            void geom(triangle v2g IN[3], inout TriangleStream<g2f> triStream)
             {
                 g2f o;
   
-                for(int i = 0; i &lt; 3; i++)
+                for(int i = 0; i < 3; i++)
                 {
                     o.vertex = UnityObjectToClipPos(IN[i].vertex);
                     UNITY_TRANSFER_FOG(o,o.vertex);
